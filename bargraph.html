@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bargraph</title>
+    <style>
+
+      body {
+        height: 0;
+        background-color: burlywood;
+      }
+
+      #bar_graph {
+        background-color: lemonchiffon;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      article {
+        display: inline-block;
+      }
+
+      div {
+        height: 300px;
+        width: 40px;
+        margin: 20px;
+        background-color: firebrick;
+      }
+
+      p {
+        padding-left: 5px;
+        font-weight: bold;
+      }
+
+      #bar1 {
+        width: 100%;
+        height: 70%;
+        background-color: white;
+        animation-name: barplot1;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+      }
+
+      #bar2 {
+        width: 100%;
+        height: 60%;
+        background-color: white;
+        animation-name: barplot2;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+      }
+
+      #bar3 {
+        width: 100%;
+        height: 20%;
+        background-color: white;
+        animation-name: barplot3;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes barplot1 {
+        0% {height: 100%; background-color: white}
+        100% {height: 70%; background-color: white}
+      }
+
+      @keyframes barplot2 {
+        0% {height: 100%; background-color: white}
+        100% {height: 60%; background-color: white}
+      }
+
+      @keyframes barplot3 {
+        0% {height: 100%; background-color: white}
+        100% {height: 20%; background-color: white}
+      }
+
+    </style>
+  </head>
+  <body>
+    <section id="bar_graph">
+
+      <article>
+        <div>
+          <article id="bar1"></article>
+        </div>
+        <p>30%</p>
+      </article>
+
+      <article>
+        <div class="">
+          <article id="bar2"></article>
+        </div>
+        <p>40%</p>
+      </article>
+
+      <article>
+        <div>
+          <article id="bar3"></article>
+        </div>
+        <p>80%</p>
+      </article>
+
+      <h1>Bar Plot</h1>
+
+    </section>
+  </body>
+</html>
